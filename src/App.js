@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Ingreso from './componentes/Ingreso';
+import { useState } from 'react';
+import Interfaz from './componentes/Interfaz';
+import Marcador from './componentes/Marcador';
+import Resultado from './componentes/Resultado';
 
 function App() {
+  const [nombre, setNombre] = useState("");
+  const NuevoNombre = (nuevoNombre) => {
+    setNombre(nuevoNombre);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hola, Mundo soy Leandro
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+     <header className='App-header'>
+       <h1>BIENVENIDOS AL PIEDRA, PAPEL O TIJERA</h1>
+       <Ingreso nombre={nombre} SetNombre={NuevoNombre} />
+       <br/>
+     </header>
     </div>
   );
 }
