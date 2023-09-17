@@ -1,11 +1,12 @@
 import React from "react";
 
-function Marcador(puntajeUsuario, puntajeComputadora) {
+function Marcador({nombre, puntajeUsuario, puntajeComputadora}) {
+  return(
     <div className="Marcador">
     <h3>Marcador</h3>
-    <p>Puntaje Usuario = {puntajeUsuario} </p>
-    <p>Puntaje Computadora = {puntajeComputadora} </p>
-    </div>
+    <p>Puntaje {nombre || "Invitado"}: {puntajeUsuario}</p>
+    <p>Puntaje Computadora: {puntajeComputadora} </p>
+    </div>)
 }
 
 export default Marcador;

@@ -12,6 +12,7 @@ function Opciones({jugada}) {
 
   return (
     <div className="opciones">
+    <h3>OPCIONES</h3>
       {opciones.map((opcionUsuario, index) => (
         <button key={index} onClick={() => jugar(opcionUsuario)}>
           {opcionUsuario}
