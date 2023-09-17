@@ -1,4 +1,7 @@
 import React from "react";
+import papel from "../imagenes/papel.png";
+import piedra from "../imagenes/piedra.png";
+import tijera from "../imagenes/tijera.png";
 import { useState } from 'react';
 
 function Opciones({jugada}) {
@@ -12,12 +15,10 @@ function Opciones({jugada}) {
 
   return (
     <div className="opciones">
-    <h3>OPCIONES</h3>
-      {opciones.map((opcionUsuario, index) => (
-        <button key={index} onClick={() => jugar(opcionUsuario)}>
-          {opcionUsuario}
-        </button>
-      ))}
+    <h3>OPCIONES, PERRO</h3>
+    <img src={piedra} id="piedra" onClick={() => jugar("piedra")}/>
+    <img src={papel} id="papel" onClick={() => jugar("papel")} />
+    <img src={tijera} id="tijera" onClick={() => jugar("tijera")} />
     </div>
   );
 };
