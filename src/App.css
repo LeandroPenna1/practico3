@@ -39,7 +39,7 @@ header {
     transform: rotate(360deg);
   }
 }
-
+/* Asignamos tamaño, posición y una transición cuando posamos el cursor a cada imagen */
 #piedra {
   width: 100px;
   height: 130px; 

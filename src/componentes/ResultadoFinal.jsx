@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+/* Se mostrará el resultado de la ronda y el resultado final */
 function ResultadoFinal({resultado, resultadoFinal}) {
   return(
     <div className="Resultado">

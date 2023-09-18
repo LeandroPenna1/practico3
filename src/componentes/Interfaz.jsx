@@ -1,5 +1,5 @@
 import React from "react";
-
+/* Se mostrarán las elecciones y el nombre del jugador. Los valores los obtemos por props */
 function Interfaz({nombre, opcionComputadora, opcionUsuario}) {
     return(
     <div className="Interfaz">
