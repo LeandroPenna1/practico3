@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { Boton } from './Boton.jsx';
 
 function Ingreso(props) {
+
     const { nombre, SetNombre } = props;
   const [nombreNuevo, setNombreNuevo] = useState(""); // Estado para el nuevo nombre
 
@@ -14,18 +16,21 @@ function Ingreso(props) {
 
 return(
     <div>
-        <h1>
-            Bienvenido al mejor juego, {nombre || "invitado"}!
-        </h1>
+        <div className='Bienvenida'>
+          <h1>BIENVENIDO AL PIEDRA, PAPEL O TIJERA</h1>
+          <h2>Bienvenido al mejor juego del mundo, {nombre || "invitado"}!</h2>
+        </div>
+        <div className='ingreso'>
         <input
         placeholder='Ingrese su nombre'
         type='text'
         value={nombreNuevo}
         onChange={NuevoNombre}
         />
-        <button
+        <Boton
         onClick={CambiarNombre}
-        >Enviar</button>
+        >Enviar</Boton>
+        </div>
     </div>
 )
 }

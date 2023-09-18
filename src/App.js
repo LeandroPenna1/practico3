@@ -7,8 +7,10 @@ import Opciones from './componentes/Opciones';
 import Marcador from './componentes/Marcador';
 import Interfaz from './componentes/Interfaz';
 import ResultadoFinal from './componentes/ResultadoFinal';
+import { Boton } from './componentes/Boton.jsx';
 
 function App() {
+  
   const [nombre, setNombre] = useState("");
   const NuevoNombre = (nuevoNombre) => {
     setNombre(nuevoNombre);
@@ -58,7 +60,6 @@ function App() {
   return (
     <div className='App'>
      <header className='App-header'>
-       <h1>BIENVENIDOS AL PIEDRA, PAPEL O TIJERA</h1>
        <Ingreso nombre={nombre} SetNombre={NuevoNombre} />
        <Opciones jugada={(opcionUsuario, opcionComputadora) =>{
         setOpcionUsuario(opcionUsuario);
@@ -69,7 +70,7 @@ function App() {
        <Marcador nombre={nombre} puntajeUsuario={puntajeUsuario} puntajeComputadora={puntajeComputadora}/>
        <ResultadoFinal resultado={resultado} resultadoFinal={resultadoFinal} />
        <div>
-        {juegoTerminado && <button onClick={reiniciarJuego}>Reiniciar Juego</button>}
+        {juegoTerminado && <Boton className='reinicio' onClick={reiniciarJuego}>Reiniciar Juego</Boton>}
        </div>
      </header>
     </div>

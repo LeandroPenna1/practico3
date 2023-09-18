@@ -1,4 +1,6 @@
-
+header {
+  background: linear-gradient(to bottom, #353c4c, #0d1017)
+}
 .App {
   text-align: center;
 }
@@ -68,11 +70,48 @@
 #tijera:hover {
   transform: scale(1.2);
 }
+.opciones {
+  margin-right: 700px;
+  position: absolute;
 
-.contenedor {
+}
+.Interfaz {
+    margin-top: 400px;
+    margin-right: 700px;
+    position: absolute;
+}
+.marcador {
+  position: absolute;
+  margin-left: 700px ;
+}
+.imagenes {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 600px;
   margin: 0 auto;
+}
+
+.Bienvenida {
+  position: absolute;
+  margin-top: -300px;
+  margin-left: -390px;
+}
+
+.ingreso {
+  position: absolute;
+  margin-top: -103px;
+  margin-left: -100px;
+}
+
+.Resultado {
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 700px ;
+}
+
+.reinicio {
+  position: absolute;
+  margin-top: 250px;
+  margin-left: -80px;
 }

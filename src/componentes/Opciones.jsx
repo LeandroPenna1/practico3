@@ -15,10 +15,12 @@ function Opciones({jugada}) {
 
   return (
     <div className="opciones">
-    <h3>OPCIONES, PERRO</h3>
+    <h3>Opciones</h3>
+    <div className="imagenes">
     <img src={piedra} id="piedra" onClick={() => jugar("piedra")}/>
     <img src={papel} id="papel" onClick={() => jugar("papel")} />
     <img src={tijera} id="tijera" onClick={() => jugar("tijera")} />
+    </div>
     </div>
   );
 };
