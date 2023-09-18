@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Juego de Piedra, Papel o Tijera
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido al juego de Piedra, Papel o Tijera! Este es un juego simple y divertido creado por Leandro Penna para el trabajo práctico n°3 del 2do tramo (Pagina web con componentes dinámicos) del curso "Argentina Programa". En el presente juego, compites contra la computadora para ver quién gana más rondas. 
 
-## Available Scripts
+## Cómo Jugar
 
-In the project directory, you can run:
+1. **Ingresar Nombre**: Para comenzar, ingresa tu nombre en el input proporcionado y haz clic en "Enviar". 
 
-### `npm start`
+2. **Elegir una Opción**: Una vez que hayas ingresado tu nombre, verás tres imágenes en la pantalla: una piedra, un papel y una tijera. Estas representan tus opciones de juego. Haz clic en una de ellas para hacer tu elección.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Resultados**: Después de hacer tu elección, la computadora también hará su elección de forma aleatoria. Verás el resultado de la ronda, en el mismo podrás:
+- Ganar
+- Empatar
+- Perder
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Marcador**: El marcador en la parte superior de la pantalla muestra tu puntaje y el puntaje de la computadora. El objetivo es ganar al mejor de 5 intentos.
 
-### `npm test`
+5. **Resultado Final**: Si alguno de los jugadores alcanza el puntaje máximo primero, se mostrará el resultado final del juego.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. **Reiniciar el Juego**: Si deseas jugar otra partida después de que el juego haya terminado, simplemente haz clic en el botón "Reiniciar Juego".
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Diviértete jugando al Piedra, Papel o Tijera y que gane el mejor!
